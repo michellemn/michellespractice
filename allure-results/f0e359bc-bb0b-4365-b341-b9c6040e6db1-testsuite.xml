@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634420928989' stop='1634420929268'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634420928989' status='broken' stop='1634420929268'>
+            <name>Customer should submit appointment request successfully after filling all fields</name>
+            <title>Customer should submit appointment request successfully after filling all fields</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634420928990' status='broken' stop='1634420929268'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ed95e825-dcb3-4df1-bdce-7491e0950093-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634420928993' status='broken' stop='1634420929268'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='98155931-eaf9-4bf8-80e1-0de7d062ba47-attachment.json' type='application/json' size='70'/>
+                            </attachments>
+                            <steps>
+                                <step start='1634420928994' status='passed' stop='1634420929266'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='d7a1e3ba-c8a2-4dc2-b5e2-b108763bae16-attachment.json' type='application/json' size='70'/>
+                                        <attachment title='Screenshot' source='faa381a9-a03c-4328-af61-4245cd5b27ef-attachment.png' type='image/png' size='15331'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1634420928996' status='passed' stop='1634420929088'>
+                                            <name>GET /session/:sessionId/screenshot</name>
+                                            <title>GET /session/:sessionId/screenshot</title>
+                                            <attachments>
+                                                <attachment title='Response' source='e77669b0-d4e3-4a5a-9bd5-dd8fde649d98-attachment.json' type='application/json' size='1869'/>
+                                            </attachments>
+                                            <steps>
+                                                <step start='1634420928997' status='passed' stop='1634420929073'>
+                                                    <name>POST /session/:sessionId/url</name>
+                                                    <title>POST /session/:sessionId/url</title>
+                                                    <attachments>
+                                                        <attachment title='Request' source='b71b1d84-67ff-43fd-8d89-d1185e893592-attachment.json' type='application/json' size='58'/>
+                                                        <attachment title='Response' source='ad9efba3-b55f-4c3b-b79c-bf0258a708f3-attachment.json' type='application/json' size='1877'/>
+                                                    </attachments>
+                                                    <steps/>
+                                                </step>
+                                                <step start='1634420929076' status='passed' stop='1634420929084'>
+                                                    <name>POST /session/:sessionId/elements</name>
+                                                    <title>POST /session/:sessionId/elements</title>
+                                                    <attachments>
+                                                        <attachment title='Request' source='3403f103-cd83-4767-8c69-86018cfc9b21-attachment.json' type='application/json' size='78'/>
+                                                        <attachment title='Response' source='e50dfc2c-7b5f-4870-b3cf-bcdcf3d24914-attachment.json' type='application/json' size='1869'/>
+                                                    </attachments>
+                                                    <steps/>
+                                                </step>
+                                            </steps>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>_storefront.default.fillAppointmentForm is not a function</message>
+                <stack-trace>TypeError: _storefront.default.fillAppointmentForm is not a function
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:9:24)
+                    at Context.executeAsync (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

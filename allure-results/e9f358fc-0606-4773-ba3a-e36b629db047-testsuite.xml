@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634500172598' stop='1634500192305'>
+    <name>View Storefront</name>
+    <title>View Storefront</title>
+    <test-cases>
+        <test-case start='1634500172601' status='passed' stop='1634500183056'>
+            <name>Customer should see name of service form is LIVE CHAT from storefront page</name>
+            <title>Customer should see name of service form is LIVE CHAT from storefront page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500172603' status='passed' stop='1634500182911'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7c114609-4465-4794-affb-1240e2d7a473-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634500182912' status='passed' stop='1634500183034'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='531b057a-3964-4085-8b65-11963c4b083d-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Response' source='3541ac14-f39d-46fe-9fba-3eec030eacf7-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634500183037' status='passed' stop='1634500183054'>
+                    <name>GET /session/:sessionId/element/5c68817e-3a45-4070-9851-8cd5498f7d00/text</name>
+                    <title>GET /session/:sessionId/element/5c68817e-3a45-4070-9851-8cd5498f7d00/text</title>
+                    <attachments>
+                        <attachment title='Response' source='c64930f0-9eb8-4395-ab73-7ce026a12c6a-attachment.json' type='application/json' size='11'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634500183056' status='passed' stop='1634500188350'>
+            <name>Customer should see Live Chat is unavailable from storefront</name>
+            <title>Customer should see Live Chat is unavailable from storefront</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500183056' status='passed' stop='1634500188349'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='bee4fa38-8f65-480a-9d81-d1e29135aba0-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634500188350' status='passed' stop='1634500192304'>
+            <name>Customer should see icon of unavailable Live Chat is red</name>
+            <title>Customer should see icon of unavailable Live Chat is red</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500188350' status='passed' stop='1634500192297'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8a2709d2-4559-441c-9826-24bc6dc42fc1-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634500192297' status='undefined'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0623aa77-f6b3-4ddb-876c-8c56a838ab85-attachment.json' type='application/json' size='87'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

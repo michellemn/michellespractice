@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634262836413' stop='1634262844569'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634262836413' status='broken' stop='1634262844569'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634262836414' status='passed' stop='1634262843075'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='58fdfe80-e6f1-416c-b467-ece46c0d0218-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634262843076' status='passed' stop='1634262843180'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c83b47b5-d0e2-4258-98f2-9335d9d139ff-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='bf583ecf-674f-4e5d-9ffa-731aac46b208-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634262843182' status='passed' stop='1634262844234'>
+                    <name>POST /session/:sessionId/element/280b59c6-2b21-4f81-bc11-1e5f0c97ee8c/click</name>
+                    <title>POST /session/:sessionId/element/280b59c6-2b21-4f81-bc11-1e5f0c97ee8c/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634262844234' status='passed' stop='1634262844236'>
+                    <name>POST /session/:sessionId/timeouts</name>
+                    <title>POST /session/:sessionId/timeouts</title>
+                    <attachments>
+                        <attachment title='Request' source='d25afa52-ce05-4baa-ba50-e333e39d6287-attachment.json' type='application/json' size='20'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634262844236' status='broken' stop='1634262844569'>
+                    <name>POST /session/:sessionId/execute/async</name>
+                    <title>POST /session/:sessionId/execute/async</title>
+                    <attachments>
+                        <attachment title='Request' source='3a0b339c-d179-4bc7-bb2a-d47ec246df0d-attachment.json' type='application/json' size='122'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634262844331' status='passed' stop='1634262844568'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='155fc8a5-71e6-42bc-a067-e036d31c6fc2-attachment.png' type='image/png' size='215432'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>javascript error: Cannot read properties of undefined (reading 'isClickable')
+                JavaScript stack:
+                TypeError: Cannot read properties of undefined (reading 'isClickable')
+                    at eval (eval at executeAsyncScript (:521:26), &lt;anonymous>:4:27)
+                    at eval (eval at executeAsyncScript (:521:26), &lt;anonymous>:5:8)
+                    at eval (eval at executeAsyncScript (:521:26), &lt;anonymous>:5:33)
+                    at executeAsyncScript (&lt;anonymous>:521:47)
+                    at &lt;anonymous>:536:29
+                    at callFunction (&lt;anonymous>:415:22)
+                    at &lt;anonymous>:429:23
+                    at &lt;anonymous>:430:3
+                  (Session info: chrome=94.0.4606.81)</message>
+                <stack-trace>0   chromedriver                        0x000000010233e5e9 chromedriver + 2749929
+                1   chromedriver                        0x00000001029f55c3 chromedriver + 9790915
+                2   chromedriver                        0x00000001020c9828 chromedriver + 174120
+                3   chromedriver                        0x00000001020ccc97 chromedriver + 187543
+                4   chromedriver                        0x00000001020cd01b chromedriver + 188443
+                5   chromedriver                        0x000000010212ec64 chromedriver + 588900
+                6   chromedriver                        0x000000010211b622 chromedriver + 509474
+                7   chromedriver                        0x000000010212dc6b chromedriver + 584811
+                8   chromedriver                        0x000000010211b933 chromedriver + 510259
+                9   chromedriver                        0x00000001020f1d6e chromedriver + 339310
+                10  chromedriver                        0x00000001020f3095 chromedriver + 344213
+                11  chromedriver                        0x00000001023053bf chromedriver + 2515903
+                12  chromedriver                        0x0000000102317f2f chromedriver + 2592559
+                13  chromedriver                        0x00000001022e9bdf chromedriver + 2403295
+                14  chromedriver                        0x00000001023192da chromedriver + 2597594
+                15  chromedriver                        0x00000001022fabcc chromedriver + 2472908
+                16  chromedriver                        0x0000000102332988 chromedriver + 2701704
+                17  chromedriver                        0x0000000102332b11 chromedriver + 2702097
+                18  chromedriver                        0x00000001023435e8 chromedriver + 2770408
+                19  libsystem_pthread.dylib             0x00007fff203a9950 _pthread_start + 224
+                20  libsystem_pthread.dylib             0x00007fff203a547b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

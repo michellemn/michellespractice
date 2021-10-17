@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634260209962' stop='1634260218652'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634260209962' status='broken' stop='1634260218651'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634260209963' status='passed' stop='1634260217254'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e8df7a8d-7109-4f23-8e85-40421875d1bd-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634260217254' status='passed' stop='1634260217310'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e9474493-c999-4517-a855-448315c9a85f-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='27405c26-ef3b-44f0-b34e-a0dbddafb13b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634260217312' status='passed' stop='1634260218370'>
+                    <name>POST /session/:sessionId/element/6d0b8946-23aa-4fd5-8a92-13837ead0760/click</name>
+                    <title>POST /session/:sessionId/element/6d0b8946-23aa-4fd5-8a92-13837ead0760/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634260218370' status='passed' stop='1634260218393'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e42bc8be-85ee-41ec-81d8-0694c93319b1-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='e55dc268-5495-4962-a2f0-6dc310e4476f-attachment.json' type='application/json' size='1875'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634260218395' status='passed' stop='1634260218649'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='38b5fb15-d8e0-412d-8038-b43aaa309ca1-attachment.png' type='image/png' size='215121'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at /Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:247:38
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at AppointmentRequestPage.getAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/appointmentrequest.page.js:21:9)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:8:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

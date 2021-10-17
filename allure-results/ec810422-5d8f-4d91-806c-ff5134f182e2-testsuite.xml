@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634429268462' stop='1634429275086'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634429268462' status='broken' stop='1634429275084'>
+            <name>Customer should submit appointment request successfully after filling all fields</name>
+            <title>Customer should submit appointment request successfully after filling all fields</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634429268463' status='passed' stop='1634429274813'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='900ab5e2-a9ce-4b4e-82dc-1524a130769d-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634429274813' status='broken' stop='1634429275084'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3a68d830-074e-4d65-8db0-f7121f00fb07-attachment.json' type='application/json' size='70'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634429274815' status='passed' stop='1634429274852'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='ce436bd7-ca35-4e0e-925a-486e1614a246-attachment.json' type='application/json' size='68'/>
+                                <attachment title='Response' source='458a52e8-d33a-4dcc-af01-c4a939ecfbdc-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1634429274854' status='passed' stop='1634429274878'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='581602f9-789a-4557-8aec-77275f207a79-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1634429274880' status='passed' stop='1634429275077'>
+                            <name>POST /session/:sessionId/element/24a46c07-427e-4d87-8c04-9188240fcd79/click</name>
+                            <title>POST /session/:sessionId/element/24a46c07-427e-4d87-8c04-9188240fcd79/click</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='a807c906-b689-4de2-a080-8c1829cda48a-attachment.png' type='image/png' size='204846'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at /Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:247:38
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at StoreFrontPage.openAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/storefront.page.js:45:8)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:8:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

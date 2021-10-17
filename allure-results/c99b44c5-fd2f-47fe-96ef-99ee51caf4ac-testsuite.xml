@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634254451337' stop='1634254468318'>
+    <name>View Storefront</name>
+    <title>View Storefront</title>
+    <test-cases>
+        <test-case start='1634254451337' status='failed' stop='1634254468317'>
+            <name>should see Live Chat and status</name>
+            <title>should see Live Chat and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634254451338' status='passed' stop='1634254457730'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1f6400ff-9ece-4a94-923e-02500755b1ea-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254457731' status='passed' stop='1634254457857'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='82a57277-62f1-4f6c-b975-7f318cf4f279-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Response' source='b65c1be1-f4f8-4f74-bc49-06039d1f4a1b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254457860' status='passed' stop='1634254458013'>
+                    <name>GET /session/:sessionId/element/d2a4e877-e4d1-437f-a5c8-4ff15ed9f211/text</name>
+                    <title>GET /session/:sessionId/element/d2a4e877-e4d1-437f-a5c8-4ff15ed9f211/text</title>
+                    <attachments>
+                        <attachment title='Response' source='30aebadd-6ecd-4bad-830a-e9afdd236b9f-attachment.json' type='application/json' size='11'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254458015' status='passed' stop='1634254458023'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e2c2631a-141d-4301-8035-54781a380cd5-attachment.json' type='application/json' size='69'/>
+                        <attachment title='Response' source='79b37a3c-df9f-4d77-996a-b609a9d8d665-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254458025' status='passed' stop='1634254458061'>
+                    <name>GET /session/:sessionId/element/67392f92-da31-41e7-b93f-a26b8a21c97b/text</name>
+                    <title>GET /session/:sessionId/element/67392f92-da31-41e7-b93f-a26b8a21c97b/text</title>
+                    <attachments>
+                        <attachment title='Response' source='251fae98-589c-4ed5-9257-221487246e2b-attachment.json' type='application/json' size='13'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254458061' status='passed' stop='1634254458079'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='39f70c9d-394e-4312-920a-da5aacb0ada0-attachment.json' type='application/json' size='104'/>
+                        <attachment title='Response' source='e85d5437-b56d-4eb4-a64d-3e5681e6aa45-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254458080' status='passed' stop='1634254458090'>
+                    <name>GET /session/:sessionId/element/67392f92-da31-41e7-b93f-a26b8a21c97b/css/color</name>
+                    <title>GET /session/:sessionId/element/67392f92-da31-41e7-b93f-a26b8a21c97b/css/color</title>
+                    <attachments>
+                        <attachment title='Response' source='74c454dd-a532-4a06-82d4-5f8f0c31e11f-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254468097' status='passed' stop='1634254468315'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='1d81b111-69f8-4277-b54c-821b39db2779-attachment.png' type='image/png' size='207346'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect  to have property value containing
+                
+                Expected: "123"
+                Received: undefined</message>
+                <stack-trace>Error: Expect  to have property value containing
+                
+                Expected: "123"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/livechat.spec.js:10:78)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

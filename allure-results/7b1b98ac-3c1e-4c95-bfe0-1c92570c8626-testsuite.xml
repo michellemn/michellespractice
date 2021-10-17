@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634350063592' stop='1634350071021'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634350063592' status='broken' stop='1634350071021'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634350063593' status='passed' stop='1634350069446'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='57740b63-316b-41c5-a9fe-b609b79bb63e-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634350069447' status='passed' stop='1634350070762'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='368fb66b-25fb-4887-be56-045617497689-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634350069448' status='passed' stop='1634350069559'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='d6425870-48f1-405a-844d-3098ec2679b5-attachment.json' type='application/json' size='78'/>
+                                <attachment title='Response' source='2210a70e-2994-41f6-afc3-f71ea21f0e05-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1634350069561' status='passed' stop='1634350069568'>
+                            <name>POST /session/:sessionId/element/fa3d80da-1890-4052-9200-de68e00b0eb7/click</name>
+                            <title>POST /session/:sessionId/element/fa3d80da-1890-4052-9200-de68e00b0eb7/click</title>
+                            <attachments>
+                                <attachment title='Response' source='9577f867-affc-4174-a147-221c40293875-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1634350070763' status='passed' stop='1634350071018'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d5488491-da00-499e-9f7f-1d98f7f3cc56-attachment.png' type='image/png' size='205617'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.frame is not a function</message>
+                <stack-trace>TypeError: browser.frame is not a function
+                    at StoreFrontPage.selectIFrame (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/page.js:17:17)
+                    at StoreFrontPage.appointmentform (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/storefront.page.js:30:13)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:10:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

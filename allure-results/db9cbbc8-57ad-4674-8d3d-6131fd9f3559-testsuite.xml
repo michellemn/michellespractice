@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634433499282' stop='1634433506931'>
+    <name>Email Me</name>
+    <title>Email Me</title>
+    <test-cases>
+        <test-case start='1634433499283' status='broken' stop='1634433506930'>
+            <name>Customer can submit Email Me request successfully with a subscrption</name>
+            <title>Customer can submit Email Me request successfully with a subscrption</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634433499283' status='passed' stop='1634433505578'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b57220ea-9b27-4add-98ce-c3dabdd01647-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634433505578' status='passed' stop='1634433506926'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='966584c9-3071-46dc-81e2-58c4f4e9e8ba-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Screenshot' source='2e4714ea-efb9-4c4a-b83e-a151c819c317-attachment.png' type='image/png' size='169623'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634433505581' status='passed' stop='1634433505684'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='8372d2a0-8f62-4fda-ba9d-cdadae18dd1d-attachment.json' type='application/json' size='65'/>
+                                <attachment title='Response' source='5e0e7e78-4d8a-449b-a19a-ba45f1dac65c-attachment.json' type='application/json' size='1858'/>
+                            </attachments>
+                            <steps>
+                                <step start='1634433505582' status='passed' stop='1634433505673'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='8a3d59c2-bcca-4fcf-b8f5-41fd9332123b-attachment.json' type='application/json' size='65'/>
+                                        <attachment title='Response' source='41382e74-9402-45d5-a712-075ad4a3f3ff-attachment.json' type='application/json' size='83'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1634433505584' status='passed' stop='1634433505655'>
+                                            <name>POST /session/:sessionId/element</name>
+                                            <title>POST /session/:sessionId/element</title>
+                                            <attachments>
+                                                <attachment title='Request' source='697c70af-f50a-478a-b270-2f58300da19b-attachment.json' type='application/json' size='59'/>
+                                                <attachment title='Response' source='de905528-c3a2-481d-88e4-aa1f0e3e58ce-attachment.json' type='application/json' size='83'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                        <step start='1634433505658' status='passed' stop='1634433505667'>
+                                            <name>POST /session/:sessionId/element/6d89cdb8-1196-4af8-8a61-fcb1027f9dfe/click</name>
+                                            <title>POST /session/:sessionId/element/6d89cdb8-1196-4af8-8a61-fcb1027f9dfe/click</title>
+                                            <attachments>
+                                                <attachment title='Response' source='081e2c34-2b78-4387-962d-17716e3684f9-attachment.json' type='application/json' size='83'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1634433505685' status='passed' stop='1634433506673'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at /Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:247:38
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at StoreFrontPage.fillOptionalFieldForEmailMe (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/storefront.page.js:114:9)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/emailme.spec.js:8:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

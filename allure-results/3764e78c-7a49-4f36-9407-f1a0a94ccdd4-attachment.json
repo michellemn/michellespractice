@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//body[@class= \"sidebar-iframe\"]"
+}

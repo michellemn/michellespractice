@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634425877273' stop='1634425877465'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634425877273' status='broken' stop='1634425877464'>
+            <name>Customer should submit appointment request successfully after filling all fields</name>
+            <title>Customer should submit appointment request successfully after filling all fields</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634425877274' status='broken' stop='1634425877464'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1634425877275' status='passed' stop='1634425877459'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='0f950e80-6910-4cc9-b3f3-988cf532019b-attachment.json' type='application/json' size='58'/>
+                                <attachment title='Screenshot' source='96cdb70b-c2c5-4baa-96cc-7ab773f63d4e-attachment.png' type='image/png' size='15354'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>config is not defined</message>
+                <stack-trace>ReferenceError: config is not defined
+                    at StoreFrontPage.addAppointmentLink (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/storefront.page.js:16:42)
+                    at StoreFrontPage.openAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/storefront.page.js:45:13)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:8:24)
+                    at Context.executeAsync (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

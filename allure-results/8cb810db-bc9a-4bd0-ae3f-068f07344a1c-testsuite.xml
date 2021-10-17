@@ -1,0 +1,127 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634439336020' stop='1634439338930'>
+    <name>View Sidebar</name>
+    <title>View Sidebar</title>
+    <test-cases>
+        <test-case start='1634439336020' status='broken' stop='1634439338930'>
+            <name>Customer can submit peronal shopper request successfully from sidebar</name>
+            <title>Customer can submit peronal shopper request successfully from sidebar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634439336021' status='passed' stop='1634439337085'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='6dbe2b6c-f9ac-4a8d-a9b4-077074b564bd-attachment.json' type='application/json' size='100'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439337085' status='passed' stop='1634439337175'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='97e5b8cf-697a-47f6-8dfe-df00414e78ed-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='b805ec9d-9719-47f4-8dd3-70f2d7e31a71-attachment.json' type='application/json' size='1874'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439337177' status='passed' stop='1634439337200'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6caedb0b-6748-4374-be89-161bbf65e73f-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='a12a6cca-8287-487d-90a3-24eecf2f8d51-attachment.json' type='application/json' size='1874'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439337683' status='passed' stop='1634439337693'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7a3ea8e4-b631-4e0c-9b5f-996a29bc2173-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='e16c219c-3955-4b22-95bf-50d2fb5a187b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439337694' status='passed' stop='1634439337709'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='a7ecdf5c-953f-4a28-8fda-6613cd6d82d0-attachment.json' type='application/json' size='8337'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439338183' status='passed' stop='1634439338303'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='4ae9fbd7-134a-4892-b39b-07c672f0b302-attachment.json' type='application/json' size='8337'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439338683' status='passed' stop='1634439338692'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='62e86d71-7f6b-49c4-be8b-47fdd8dc7e60-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='0baafe4e-7460-40fb-a56d-e78ab6cc1242-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634439338692' status='passed' stop='1634439338927'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2851c82e-85da-4d8f-8dc2-12f317f9d1a1-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Screenshot' source='ee1d41cf-348d-4244-a36d-68f2109f6ace-attachment.png' type='image/png' size='190840'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634439338693' status='passed' stop='1634439338717'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='5bfdb38d-4f48-4f74-8152-107c8c8ad30b-attachment.json' type='application/json' size='75'/>
+                                <attachment title='Response' source='9b828abd-add2-4ef6-945f-1d83a3ddcf32-attachment.json' type='application/json' size='1864'/>
+                            </attachments>
+                            <steps>
+                                <step start='1634439338695' status='passed' stop='1634439338708'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='7018eabf-43dc-4170-844f-e3e770dcc234-attachment.json' type='application/json' size='65'/>
+                                        <attachment title='Response' source='c183e062-6806-423e-a706-da01de5ef433-attachment.json' type='application/json' size='83'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1634439338718' status='passed' stop='1634439338720'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='fea49fdb-aeaa-42bd-a0ec-31b8e815cfcd-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at /Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:247:38
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at SideBarPage.openLandingPage (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/sidebar.page.js:39:9)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/sidebar.spec.js:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

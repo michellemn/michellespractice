@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634339802499' stop='1634339809641'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634339802499' status='broken' stop='1634339809640'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634339802499' status='passed' stop='1634339808265'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4b29a05f-bf40-47dc-af65-4acfb34ae558-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634339808266' status='passed' stop='1634339808338'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='fd2b9af7-4ab7-4f21-a0bd-ecbebd3a6800-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='36ce5bb8-9dae-462b-8e6e-888279d9d7cb-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634339808340' status='passed' stop='1634339809366'>
+                    <name>POST /session/:sessionId/element/6357e3e5-9e08-4450-870d-e55ae0c338f0/click</name>
+                    <title>POST /session/:sessionId/element/6357e3e5-9e08-4450-870d-e55ae0c338f0/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634339809367' status='passed' stop='1634339809638'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='0ba87435-3af7-4526-930e-603df1c3abdc-attachment.png' type='image/png' size='216921'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>selectServicePopUpWindow is not defined</message>
+                <stack-trace>ReferenceError: selectServicePopUpWindow is not defined
+                    at AppointmentRequestPage.getAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/appointmentrequest.page.js:26:9)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

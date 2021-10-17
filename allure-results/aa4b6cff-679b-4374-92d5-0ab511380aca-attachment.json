@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//button[contains(@class, \"reveal__close-button proper-icon-close\")]"
+}

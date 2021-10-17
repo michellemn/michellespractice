@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634347931023' stop='1634347938045'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634347931023' status='broken' stop='1634347938044'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634347931024' status='passed' stop='1634347936657'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4a9d2be9-4350-4e70-a014-7e6da7e4401c-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634347936658' status='passed' stop='1634347937773'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='861ca2e7-3c67-45c3-9bc8-37cc77a545a8-attachment.json' type='application/json' size='78'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634347936659' status='passed' stop='1634347936732'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='b0448b84-c029-4cd6-aa00-1da54938a7d9-attachment.json' type='application/json' size='78'/>
+                                <attachment title='Response' source='28965dd7-fcf8-4d24-8308-9b8b4015d2a6-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1634347936735' status='passed' stop='1634347936737'>
+                            <name>POST /session/:sessionId/element/cfa0abe1-2f81-4867-ba25-0478b153c218/click</name>
+                            <title>POST /session/:sessionId/element/cfa0abe1-2f81-4867-ba25-0478b153c218/click</title>
+                            <attachments>
+                                <attachment title='Response' source='633b1d96-9a89-4c56-91a8-ad04bdffe403-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1634347937773' status='passed' stop='1634347937834'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1ffe6860-e036-4879-864d-2795cfcd9819-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='54820e06-06ce-418a-904b-613385c7f375-attachment.json' type='application/json' size='1857'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634347937774' status='passed' stop='1634347937779'>
+                            <name>GET /session/:sessionId/window/handles</name>
+                            <title>GET /session/:sessionId/window/handles</title>
+                            <attachments>
+                                <attachment title='Response' source='603c4bcf-963e-4dcb-b151-74e75e16c248-attachment.json' type='application/json' size='49'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1634347937835' status='passed' stop='1634347938043'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d6aae302-0415-4024-baeb-1e225889b62e-attachment.png' type='image/png' size='211280'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>nameField.isVisible is not a function</message>
+                <stack-trace>TypeError: nameField.isVisible is not a function
+                    at AppointmentRequestPage.fillAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/appointmentrequest.page.js:31:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:11:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

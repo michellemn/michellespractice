@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634345061867' stop='1634345068007'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634345061868' status='broken' stop='1634345068007'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634345061868' status='passed' stop='1634345067714'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a5a25a07-0a00-4fcc-affd-21fc944f6729-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634345067714' status='broken' stop='1634345068007'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1b734dfc-94bd-42d2-8435-d49ebca77640-attachment.json' type='application/json' size='87'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634345067716' status='broken' stop='1634345068007'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='f5149788-3bf1-4fcd-a865-f5e375920d99-attachment.json' type='application/json' size='87'/>
+                            </attachments>
+                            <steps>
+                                <step start='1634345067802' status='passed' stop='1634345068006'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments>
+                                        <attachment title='Screenshot' source='26af7923-307b-4058-9277-ca80a104a572-attachment.png' type='image/png' size='203974'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: Unable to locate an element with the xpath expression //a[@id="AtAppointmentLink") and not(@disabled)] because of the following error:
+                SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@id="AtAppointmentLink") and not(@disabled)]' is not a valid XPath expression.
+                  (Session info: chrome=94.0.4606.81)</message>
+                <stack-trace>0   chromedriver                        0x0000000100dc35e9 chromedriver + 2749929
+                1   chromedriver                        0x000000010147a5c3 chromedriver + 9790915
+                2   chromedriver                        0x0000000100b4e828 chromedriver + 174120
+                3   chromedriver                        0x0000000100b516a1 chromedriver + 186017
+                4   chromedriver                        0x0000000100b514c1 chromedriver + 185537
+                5   chromedriver                        0x0000000100b5175c chromedriver + 186204
+                6   chromedriver                        0x0000000100b8317c chromedriver + 389500
+                7   chromedriver                        0x0000000100bb4ed4 chromedriver + 593620
+                8   chromedriver                        0x0000000100ba066d chromedriver + 509549
+                9   chromedriver                        0x0000000100bb2c6b chromedriver + 584811
+                10  chromedriver                        0x0000000100ba0933 chromedriver + 510259
+                11  chromedriver                        0x0000000100b76d6e chromedriver + 339310
+                12  chromedriver                        0x0000000100b78095 chromedriver + 344213
+                13  chromedriver                        0x0000000100d8a3bf chromedriver + 2515903
+                14  chromedriver                        0x0000000100d9cf2f chromedriver + 2592559
+                15  chromedriver                        0x0000000100d6ebdf chromedriver + 2403295
+                16  chromedriver                        0x0000000100d9e2da chromedriver + 2597594
+                17  chromedriver                        0x0000000100d7fbcc chromedriver + 2472908
+                18  chromedriver                        0x0000000100db7988 chromedriver + 2701704
+                19  chromedriver                        0x0000000100db7b11 chromedriver + 2702097
+                20  chromedriver                        0x0000000100dc85e8 chromedriver + 2770408
+                21  libsystem_pthread.dylib             0x00007fff20405950 _pthread_start + 224
+                22  libsystem_pthread.dylib             0x00007fff2040147b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

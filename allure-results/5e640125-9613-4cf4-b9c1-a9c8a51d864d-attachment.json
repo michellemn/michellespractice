@@ -1,0 +1,4 @@
+{
+  "script": "return (function () {\n      // eslint-disable-next-line no-undef\n      window.scrollTo(0, document.body.scrollHeight || document.documentElement.scrollHeight);\n    }).apply(null, arguments)",
+  "args": []
+}

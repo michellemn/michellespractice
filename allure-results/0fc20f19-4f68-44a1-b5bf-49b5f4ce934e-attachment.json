@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//a[@class= \"ui-state-default\" and text()= \"23\"]"
+}

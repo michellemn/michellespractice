@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634340837076' stop='1634340844420'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634340837076' status='broken' stop='1634340844419'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634340837078' status='passed' stop='1634340842870'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='0bdf6ef9-41bc-42e9-a9d2-6b8e681cefa9-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634340842871' status='passed' stop='1634340842949'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ba58bfb3-aff2-4193-88fc-5712698a30aa-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='55a34891-db94-4675-98f9-fc6b73a1ae47-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634340842952' status='passed' stop='1634340844195'>
+                    <name>POST /session/:sessionId/element/9d3dccfe-60f0-449a-b555-072198d1c71b/click</name>
+                    <title>POST /session/:sessionId/element/9d3dccfe-60f0-449a-b555-072198d1c71b/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634340844195' status='passed' stop='1634340844417'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='6b56784e-3647-4725-8169-242b6dc92b71-attachment.png' type='image/png' size='213284'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>logbrowser is not defined</message>
+                <stack-trace>ReferenceError: logbrowser is not defined
+                    at AppointmentRequestPage.getAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/appointmentrequest.page.js:26:21)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

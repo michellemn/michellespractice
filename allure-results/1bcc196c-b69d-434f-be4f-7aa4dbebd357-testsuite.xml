@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634254926955' stop='1634254935392'>
+    <name>View Storefront</name>
+    <title>View Storefront</title>
+    <test-cases>
+        <test-case start='1634254926955' status='broken' stop='1634254935392'>
+            <name>should see Live Chat and status</name>
+            <title>should see Live Chat and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634254926956' status='passed' stop='1634254935058'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='49450a49-2726-428e-bb56-ceeed2fde66a-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254935059' status='passed' stop='1634254935112'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='805cbc4b-7c4d-461b-8aaa-ef1adfaa5778-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Response' source='3ce41c81-3af8-46be-89fb-84ce30184de9-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254935114' status='passed' stop='1634254935129'>
+                    <name>GET /session/:sessionId/element/e5c18936-42b3-4218-8cf1-7d5b71164cf3/text</name>
+                    <title>GET /session/:sessionId/element/e5c18936-42b3-4218-8cf1-7d5b71164cf3/text</title>
+                    <attachments>
+                        <attachment title='Response' source='e6e54f9d-5ffc-41b9-b2e9-f72a6641ed49-attachment.json' type='application/json' size='11'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254935131' status='passed' stop='1634254935141'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='cea3cf8c-51b8-4fd3-90cc-488826a83cb9-attachment.json' type='application/json' size='69'/>
+                        <attachment title='Response' source='686ee0ac-9b8d-4d8a-8984-3605f20b40e6-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254935143' status='passed' stop='1634254935190'>
+                    <name>GET /session/:sessionId/element/45e4addb-b6ea-408e-91ec-5824e975628c/text</name>
+                    <title>GET /session/:sessionId/element/45e4addb-b6ea-408e-91ec-5824e975628c/text</title>
+                    <attachments>
+                        <attachment title='Response' source='d03627be-a9e3-4161-81d6-a9d6b8409cc4-attachment.json' type='application/json' size='13'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634254935191' status='passed' stop='1634254935390'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='62c1f5e4-f83d-4aa4-8b56-911df89befe3-attachment.png' type='image/png' size='207323'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>liveChatStatus is not defined</message>
+                <stack-trace>ReferenceError: liveChatStatus is not defined
+                    at StoreFrontPage.statusTextColor (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/storefront.page.js:13:29)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/livechat.spec.js:10:37)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

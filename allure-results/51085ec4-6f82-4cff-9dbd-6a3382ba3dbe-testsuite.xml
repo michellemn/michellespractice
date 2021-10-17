@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634435787559' stop='1634435789580'>
+    <name>View Sidebar</name>
+    <title>View Sidebar</title>
+    <test-cases>
+        <test-case start='1634435787560' status='broken' stop='1634435789580'>
+            <name>Customer can submit peronal shopper request successfully from sidebar</name>
+            <title>Customer can submit peronal shopper request successfully from sidebar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634435787560' status='passed' stop='1634435788722'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a5a1f0b9-d190-4e97-8a8b-9e0d36dd3a91-attachment.json' type='application/json' size='100'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634435788723' status='passed' stop='1634435788874'>
+                    <name>POST /session/:sessionId/timeouts</name>
+                    <title>POST /session/:sessionId/timeouts</title>
+                    <attachments>
+                        <attachment title='Request' source='18f56d4f-19e0-4d63-808a-7724e3c450c1-attachment.json' type='application/json' size='24'/>
+                        <attachment title='Response' source='5931ecc7-66c5-4664-9459-02884d57947b-attachment.json' type='application/json' size='1870'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634435788724' status='passed' stop='1634435788726'>
+                            <name>POST /session/:sessionId/execute/sync</name>
+                            <title>POST /session/:sessionId/execute/sync</title>
+                            <attachments>
+                                <attachment title='Request' source='a14142ba-4681-464f-8de3-56511ea60e2d-attachment.json' type='application/json' size='224'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1634435788727' status='passed' stop='1634435788835'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='bcc80936-2258-41c1-929c-a79e2a3d4669-attachment.json' type='application/json' size='75'/>
+                                <attachment title='Response' source='88a0d9d4-0e99-40af-88c9-f133feba9410-attachment.json' type='application/json' size='1874'/>
+                            </attachments>
+                            <steps>
+                                <step start='1634435788728' status='passed' stop='1634435788827'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='82ac522b-6a16-40cc-9e04-1135bb41fae6-attachment.json' type='application/json' size='75'/>
+                                        <attachment title='Response' source='af621a81-6bbd-40dc-8350-66b9ade04602-attachment.json' type='application/json' size='1874'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1634435788728' status='passed' stop='1634435788803'>
+                                            <name>POST /session/:sessionId/element</name>
+                                            <title>POST /session/:sessionId/element</title>
+                                            <attachments>
+                                                <attachment title='Request' source='7e5eff8b-5a79-4ed7-a26d-2b73fa8f90a6-attachment.json' type='application/json' size='71'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1634435788876' status='passed' stop='1634435788883'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a0819b46-05f9-4bef-92dd-e8cac033b49f-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='a185f3b7-f058-4eda-968d-84d7ad7ad072-attachment.json' type='application/json' size='1870'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634435789377' status='passed' stop='1634435789576'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='eb97b01d-502a-49a3-a31d-4c7c1aab48ad-attachment.png' type='image/png' size='112068'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element ("//h1[text()= "Ask an Associate"]") still not displayed after 500ms</message>
+                <stack-trace>Error: element ("//h1[text()= "Ask an Associate"]") still not displayed after 500ms
+                    at /Users/nanmeng/Documents/PracticeForMichelle/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at SideBarPage.openLandingPage (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/sidebar.page.js:37:9)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/sidebar.spec.js:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//h1[text()= \"Links to sidebars for different stores\"]"
+}

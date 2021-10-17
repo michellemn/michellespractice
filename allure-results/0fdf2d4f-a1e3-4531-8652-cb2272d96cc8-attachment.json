@@ -1,0 +1,4 @@
+{
+  "script": "return (done => {\n      this.liveChatOption.click();\n    }).apply(null, arguments)",
+  "args": []
+}

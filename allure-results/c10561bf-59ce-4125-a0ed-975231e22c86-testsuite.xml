@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634436715134' stop='1634436717697'>
+    <name>View Sidebar</name>
+    <title>View Sidebar</title>
+    <test-cases>
+        <test-case start='1634436715134' status='broken' stop='1634436717697'>
+            <name>Customer can submit peronal shopper request successfully from sidebar</name>
+            <title>Customer can submit peronal shopper request successfully from sidebar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634436715135' status='passed' stop='1634436716378'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c6525db6-77d2-4590-a48e-cfabe5cc9fdb-attachment.json' type='application/json' size='100'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634436716379' status='passed' stop='1634436716466'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='60629d93-73ab-4569-a0fd-64c7882e027d-attachment.json' type='application/json' size='93'/>
+                        <attachment title='Response' source='9935f668-cce5-4ce3-9117-36120540a328-attachment.json' type='application/json' size='1892'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634436716468' status='passed' stop='1634436716489'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='67913683-6b64-40ec-8224-8d436cf04e30-attachment.json' type='application/json' size='93'/>
+                        <attachment title='Response' source='d09ffbbb-f1df-4d36-8a2e-2263adf0a7ad-attachment.json' type='application/json' size='1892'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634436716974' status='passed' stop='1634436717018'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='68aa1b62-f37e-4426-b29b-1d5127e318a7-attachment.json' type='application/json' size='93'/>
+                        <attachment title='Response' source='f201d4e0-7606-4498-bb90-9001f3235129-attachment.json' type='application/json' size='1892'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634436717475' status='passed' stop='1634436717693'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='783d5cb3-638d-44d6-a4d1-7cd71f7b99df-attachment.png' type='image/png' size='151884'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element ("//h1[text()= "Links to sidebars for different stores"]") still not displayed after 1000ms</message>
+                <stack-trace>Error: element ("//h1[text()= "Links to sidebars for different stores"]") still not displayed after 1000ms
+                    at /Users/nanmeng/Documents/PracticeForMichelle/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at Element.wrapCommandFn (/Users/nanmeng/Documents/PracticeForMichelle/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at SideBarPage.openLandingPage (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/sidebar.page.js:36:9)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/sidebar.spec.js:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

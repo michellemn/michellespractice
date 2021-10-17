@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634339877732' stop='1634339884776'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634339877732' status='broken' stop='1634339884776'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634339877733' status='passed' stop='1634339883225'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7bed50c0-cd87-4419-a8b6-5bf432876651-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634339883226' status='passed' stop='1634339883340'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2607fa2c-2c24-45a7-99b6-27252dd99990-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='32e55ffb-7ad3-4be3-90b7-f3fce56cd3fa-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634339883342' status='passed' stop='1634339884549'>
+                    <name>POST /session/:sessionId/element/b0e5f291-12df-4d13-8fad-e7e3a95c080a/click</name>
+                    <title>POST /session/:sessionId/element/b0e5f291-12df-4d13-8fad-e7e3a95c080a/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634339884550' status='passed' stop='1634339884773'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a43d64bc-1a4f-4365-b803-cf7c40ca47ee-attachment.png' type='image/png' size='216921'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.getTabIds is not a function</message>
+                <stack-trace>TypeError: browser.getTabIds is not a function
+                    at AppointmentRequestPage.selectServicePopUpWindow (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/page.js:15:33)
+                    at AppointmentRequestPage.getAppointmentForm (/Users/nanmeng/Documents/PracticeForMichelle/test/pageobjects/appointmentrequest.page.js:26:14)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/appointment.spec.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

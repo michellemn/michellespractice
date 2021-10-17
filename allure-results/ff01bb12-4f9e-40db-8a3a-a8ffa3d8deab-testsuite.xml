@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634299641651' stop='1634299649171'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634299641651' status='broken' stop='1634299649171'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634299641652' status='passed' stop='1634299647706'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='98cf6ea2-12fe-4d4b-8209-df33a58d20d4-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299647707' status='passed' stop='1634299647783'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1fd8fafe-8e68-4617-9195-b5f71816e382-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='c6e80f67-6203-4935-ac92-9300b2cf6fe5-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299647785' status='passed' stop='1634299648852'>
+                    <name>POST /session/:sessionId/element/31961989-e3cc-4589-8545-5c8051c4872b/click</name>
+                    <title>POST /session/:sessionId/element/31961989-e3cc-4589-8545-5c8051c4872b/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634299648853' status='passed' stop='1634299648882'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0644c3bb-e28b-4e30-b374-8ad0fa9bda83-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='ebe9f2c8-8fff-4586-a3fd-13217e7e757c-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299648883' status='broken' stop='1634299649171'>
+                    <name>POST /session/:sessionId/element/59b0fa54-e751-413b-9442-0507b830eb1f/click</name>
+                    <title>POST /session/:sessionId/element/59b0fa54-e751-413b-9442-0507b830eb1f/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1634299648950' status='passed' stop='1634299649170'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='35aa9960-0652-4a49-a904-7ed7f045eb09-attachment.png' type='image/png' size='215903'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=94.0.4606.81)</message>
+                <stack-trace>0   chromedriver                        0x00000001050205e9 chromedriver + 2749929
+                1   chromedriver                        0x00000001056d75c3 chromedriver + 9790915
+                2   chromedriver                        0x0000000104dab6df chromedriver + 173791
+                3   chromedriver                        0x0000000104de1509 chromedriver + 394505
+                4   chromedriver                        0x0000000104dd57a8 chromedriver + 346024
+                5   chromedriver                        0x0000000104dfd712 chromedriver + 509714
+                6   chromedriver                        0x0000000104dd5535 chromedriver + 345397
+                7   chromedriver                        0x0000000104dfd98e chromedriver + 510350
+                8   chromedriver                        0x0000000104e0fc6b chromedriver + 584811
+                9   chromedriver                        0x0000000104dfd933 chromedriver + 510259
+                10  chromedriver                        0x0000000104dd3d6e chromedriver + 339310
+                11  chromedriver                        0x0000000104dd5095 chromedriver + 344213
+                12  chromedriver                        0x0000000104fe73bf chromedriver + 2515903
+                13  chromedriver                        0x0000000104ff9f2f chromedriver + 2592559
+                14  chromedriver                        0x0000000104fcbbdf chromedriver + 2403295
+                15  chromedriver                        0x0000000104ffb2da chromedriver + 2597594
+                16  chromedriver                        0x0000000104fdcbcc chromedriver + 2472908
+                17  chromedriver                        0x0000000105014988 chromedriver + 2701704
+                18  chromedriver                        0x0000000105014b11 chromedriver + 2702097
+                19  chromedriver                        0x00000001050255e8 chromedriver + 2770408
+                20  libsystem_pthread.dylib             0x00007fff203a9950 _pthread_start + 224
+                21  libsystem_pthread.dylib             0x00007fff203a547b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

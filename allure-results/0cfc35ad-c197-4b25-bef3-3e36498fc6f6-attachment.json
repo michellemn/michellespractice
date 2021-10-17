@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[contains(@class, \"content-ctn fn-content-wrapper\")]"
+}

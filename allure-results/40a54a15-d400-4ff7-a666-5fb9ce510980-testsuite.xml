@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634250844048' stop='1634250861205'>
+    <name>View Storefront</name>
+    <title>View Storefront</title>
+    <test-cases>
+        <test-case start='1634250844048' status='failed' stop='1634250861205'>
+            <name>should see Live Chat and status</name>
+            <title>should see Live Chat and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634250844049' status='passed' stop='1634250850820'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='10b36133-b3bf-416e-b069-d4d61fdf3f9c-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634250850821' status='passed' stop='1634250850883'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4474f6d4-dcd2-44b1-af06-74dca31cfeda-attachment.json' type='application/json' size='65'/>
+                        <attachment title='Response' source='2abeda3b-b7bc-4543-9866-a2cec7b3239b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634250850886' status='passed' stop='1634250850899'>
+                    <name>GET /session/:sessionId/element/a6fde8c9-60e8-4983-b7bf-f0eb5f80a3a0/text</name>
+                    <title>GET /session/:sessionId/element/a6fde8c9-60e8-4983-b7bf-f0eb5f80a3a0/text</title>
+                    <attachments>
+                        <attachment title='Response' source='35bf0aa7-766b-4231-b078-22fb6a3488cb-attachment.json' type='application/json' size='11'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634250850901' status='passed' stop='1634250850910'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='5c84bac5-55d4-4605-b278-4cc6e768533f-attachment.json' type='application/json' size='69'/>
+                        <attachment title='Response' source='870ea5f3-3a5c-4964-b780-84b92a51111f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634250850912' status='passed' stop='1634250850961'>
+                    <name>GET /session/:sessionId/element/2aab1a86-5ac0-4f82-96ff-db09c858daa2/text</name>
+                    <title>GET /session/:sessionId/element/2aab1a86-5ac0-4f82-96ff-db09c858daa2/text</title>
+                    <attachments>
+                        <attachment title='Response' source='970d7d05-b13e-43f6-905a-7cbff5de5a88-attachment.json' type='application/json' size='13'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634250860969' status='passed' stop='1634250861202'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a1f805bb-b11c-441e-9415-f1c4e959dff2-attachment.png' type='image/png' size='208207'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect  to have property value
+                
+                Expected: "#ee0c0b"
+                Received: undefined</message>
+                <stack-trace>Error: Expect  to have property value
+                
+                Expected: "#ee0c0b"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/nanmeng/Documents/PracticeForMichelle/test/specs/livechat.spec.js:9:54)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634500550567' stop='1634500569638'>
+    <name>View Storefront</name>
+    <title>View Storefront</title>
+    <test-cases>
+        <test-case start='1634500550568' status='passed' stop='1634500560818'>
+            <name>Customer should see name of service form is LIVE CHAT from storefront page</name>
+            <title>Customer should see name of service form is LIVE CHAT from storefront page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500550568' status='passed' stop='1634500560814'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='efbba1b9-d6f7-4795-a171-1b297265175a-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634500560816' status='undefined'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f193baa4-c1ce-48c5-b4cb-fd2323882593-attachment.json' type='application/json' size='65'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634500560820' status='passed' stop='1634500565971'>
+            <name>Customer should see Live Chat is unavailable from storefront</name>
+            <title>Customer should see Live Chat is unavailable from storefront</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500560821' status='passed' stop='1634500561042'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='bb8535eb-dd1b-4337-adfc-f45b8f37f57d-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='703142ac-9ad0-4743-a378-e0813ef59491-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634500561046' status='passed' stop='1634500565970'>
+                    <name>GET /session/:sessionId/element/17cbb283-8273-45d3-b56c-f5f554db01c7/text</name>
+                    <title>GET /session/:sessionId/element/17cbb283-8273-45d3-b56c-f5f554db01c7/text</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634500565971' status='passed' stop='1634500569638'>
+            <name>Customer should see icon of unavailable Live Chat is red</name>
+            <title>Customer should see icon of unavailable Live Chat is red</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500565971' status='undefined'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a953f46e-30fa-4b67-9f66-05f713e77516-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634500565984' status='passed' stop='1634500569636'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='e184a153-e0be-4c80-a831-ade6d59096db-attachment.json' type='application/json' size='65'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1634500569636' status='undefined'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='a60a6981-9817-4956-871e-919a89a06f2b-attachment.json' type='application/json' size='87'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

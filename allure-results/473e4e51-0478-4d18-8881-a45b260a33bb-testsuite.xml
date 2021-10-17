@@ -1,0 +1,150 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634500479438' stop='1634500486608'>
+    <name>View Storefront</name>
+    <title>View Storefront</title>
+    <test-cases>
+        <test-case start='1634500479438' status='passed' stop='1634500486386'>
+            <name>Customer should see name of service form is LIVE CHAT from storefront page</name>
+            <title>Customer should see name of service form is LIVE CHAT from storefront page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500479439' status='passed' stop='1634500486382'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='667d0891-65df-4c50-9e16-22c06f6af0a2-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634500486384' status='undefined'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d772e5ca-88af-4179-a031-532ddca26505-attachment.json' type='application/json' size='65'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1634500486386' status='broken' stop='1634500486551'>
+            <name>Customer should see Live Chat is unavailable from storefront</name>
+            <title>Customer should see Live Chat is unavailable from storefront</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500486387' status='broken' stop='1634500486551'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8fe5c60a-5622-40f3-8009-0e198afeb261-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634500486526' status='broken' stop='1634500486551'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=94.0.4606.81)</message>
+                <stack-trace>0   chromedriver                        0x00000001050945e9 chromedriver + 2749929
+                1   chromedriver                        0x000000010574b5c3 chromedriver + 9790915
+                2   chromedriver                        0x0000000104e1f828 chromedriver + 174120
+                3   chromedriver                        0x0000000104e0fb7e chromedriver + 109438
+                4   chromedriver                        0x0000000104e10f52 chromedriver + 114514
+                5   chromedriver                        0x0000000104e09d02 chromedriver + 85250
+                6   chromedriver                        0x0000000104e20cb3 chromedriver + 179379
+                7   chromedriver                        0x0000000104e8331c chromedriver + 582428
+                8   chromedriver                        0x0000000104e71933 chromedriver + 510259
+                9   chromedriver                        0x0000000104e47d6e chromedriver + 339310
+                10  chromedriver                        0x0000000104e49095 chromedriver + 344213
+                11  chromedriver                        0x000000010505b3bf chromedriver + 2515903
+                12  chromedriver                        0x000000010506df2f chromedriver + 2592559
+                13  chromedriver                        0x000000010503fbdf chromedriver + 2403295
+                14  chromedriver                        0x000000010506f2da chromedriver + 2597594
+                15  chromedriver                        0x0000000105050bcc chromedriver + 2472908
+                16  chromedriver                        0x0000000105088988 chromedriver + 2701704
+                17  chromedriver                        0x0000000105088b11 chromedriver + 2702097
+                18  chromedriver                        0x00000001050995e8 chromedriver + 2770408
+                19  libsystem_pthread.dylib             0x00007fff20405950 _pthread_start + 224
+                20  libsystem_pthread.dylib             0x00007fff2040147b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1634500486551' status='broken' stop='1634500486607'>
+            <name>Customer should see icon of unavailable Live Chat is red</name>
+            <title>Customer should see icon of unavailable Live Chat is red</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634500486552' status='broken' stop='1634500486607'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b352a5fb-0b14-4dcf-8923-842a23e22c54-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634500486581' status='broken' stop='1634500486607'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=94.0.4606.81)</message>
+                <stack-trace>0   chromedriver                        0x00000001050945e9 chromedriver + 2749929
+                1   chromedriver                        0x000000010574b5c3 chromedriver + 9790915
+                2   chromedriver                        0x0000000104e1f828 chromedriver + 174120
+                3   chromedriver                        0x0000000104e0fb7e chromedriver + 109438
+                4   chromedriver                        0x0000000104e10f52 chromedriver + 114514
+                5   chromedriver                        0x0000000104e09d02 chromedriver + 85250
+                6   chromedriver                        0x0000000104e20cb3 chromedriver + 179379
+                7   chromedriver                        0x0000000104e8331c chromedriver + 582428
+                8   chromedriver                        0x0000000104e71933 chromedriver + 510259
+                9   chromedriver                        0x0000000104e47d6e chromedriver + 339310
+                10  chromedriver                        0x0000000104e49095 chromedriver + 344213
+                11  chromedriver                        0x000000010505b3bf chromedriver + 2515903
+                12  chromedriver                        0x000000010506df2f chromedriver + 2592559
+                13  chromedriver                        0x000000010503fbdf chromedriver + 2403295
+                14  chromedriver                        0x000000010506f2da chromedriver + 2597594
+                15  chromedriver                        0x0000000105050bcc chromedriver + 2472908
+                16  chromedriver                        0x0000000105088988 chromedriver + 2701704
+                17  chromedriver                        0x0000000105088b11 chromedriver + 2702097
+                18  chromedriver                        0x00000001050995e8 chromedriver + 2770408
+                19  libsystem_pthread.dylib             0x00007fff20405950 _pthread_start + 224
+                20  libsystem_pthread.dylib             0x00007fff2040147b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

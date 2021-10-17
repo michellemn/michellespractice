@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div/label[(text() = \"Select Appointment Type\")]"
+}

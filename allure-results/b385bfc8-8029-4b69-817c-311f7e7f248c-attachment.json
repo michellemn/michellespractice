@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//iframe[@id= \"sf-widget-companion\"]"
+}

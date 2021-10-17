@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634299889647' stop='1634299898868'>
+    <name>Add Appointment</name>
+    <title>Add Appointment</title>
+    <test-cases>
+        <test-case start='1634299889648' status='broken' stop='1634299898867'>
+            <name>should open appointment link</name>
+            <title>should open appointment link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634299889648' status='passed' stop='1634299896562'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a90eab41-08b6-49d2-aacd-a0d750af3917-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299896563' status='passed' stop='1634299896643'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d7096aab-af3d-4212-ace2-40e9859115e4-attachment.json' type='application/json' size='80'/>
+                        <attachment title='Response' source='6e81fc01-bf5a-401f-b96b-db0252c78299-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299896646' status='passed' stop='1634299897866'>
+                    <name>POST /session/:sessionId/element/2ffab744-1333-4b57-8bf3-02cb8e184217/click</name>
+                    <title>POST /session/:sessionId/element/2ffab744-1333-4b57-8bf3-02cb8e184217/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1634299897866' status='passed' stop='1634299897888'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='bc7d44a5-58cc-40bf-80b3-fa16587556ec-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='a937510f-4b51-431b-addc-1958dd306b19-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299897893' status='passed' stop='1634299897939'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='fd53b24e-3213-4104-a686-b0e29ad19974-attachment.json' type='application/json' size='8337'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299897939' status='passed' stop='1634299897954'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='808d0473-952b-467e-878d-4881e99b4f38-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='4fcb8fea-e3e0-4ccd-8d17-c8ed73741c97-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634299897955' status='broken' stop='1634299898867'>
+                    <name>POST /session/:sessionId/element/c306649e-71de-4e12-9493-c775faf7b542/click</name>
+                    <title>POST /session/:sessionId/element/c306649e-71de-4e12-9493-c775faf7b542/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1634299897989' status='passed' stop='1634299898867'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='fd5c9df7-f0ef-4597-a978-5302e18d5987-attachment.png' type='image/png' size='215990'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=94.0.4606.81)</message>
+                <stack-trace>0   chromedriver                        0x000000010443e5e9 chromedriver + 2749929
+                1   chromedriver                        0x0000000104af55c3 chromedriver + 9790915
+                2   chromedriver                        0x00000001041c96df chromedriver + 173791
+                3   chromedriver                        0x00000001041ff509 chromedriver + 394505
+                4   chromedriver                        0x00000001041f37a8 chromedriver + 346024
+                5   chromedriver                        0x000000010421b712 chromedriver + 509714
+                6   chromedriver                        0x00000001041f3535 chromedriver + 345397
+                7   chromedriver                        0x000000010421b98e chromedriver + 510350
+                8   chromedriver                        0x000000010422dc6b chromedriver + 584811
+                9   chromedriver                        0x000000010421b933 chromedriver + 510259
+                10  chromedriver                        0x00000001041f1d6e chromedriver + 339310
+                11  chromedriver                        0x00000001041f3095 chromedriver + 344213
+                12  chromedriver                        0x00000001044053bf chromedriver + 2515903
+                13  chromedriver                        0x0000000104417f2f chromedriver + 2592559
+                14  chromedriver                        0x00000001043e9bdf chromedriver + 2403295
+                15  chromedriver                        0x00000001044192da chromedriver + 2597594
+                16  chromedriver                        0x00000001043fabcc chromedriver + 2472908
+                17  chromedriver                        0x0000000104432988 chromedriver + 2701704
+                18  chromedriver                        0x0000000104432b11 chromedriver + 2702097
+                19  chromedriver                        0x00000001044435e8 chromedriver + 2770408
+                20  libsystem_pthread.dylib             0x00007fff203a9950 _pthread_start + 224
+                21  libsystem_pthread.dylib             0x00007fff203a547b thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
