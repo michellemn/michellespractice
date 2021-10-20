@@ -8,26 +8,12 @@ export default class Page {
 
     /**
     * Open web url
-    * @param {String} path 
+    * @param {String} website 
     */
-    open (path) {
-        return browser.url(path);
+    open (website) {
+        var pageUrl = website == 'storefront' ? 'https://elguntors-stg.salesfloor.net/reggie' : 'https://elguntors-widgets-stg.salesfloor.net/tests/desktop?lang=en&sf_ip=67.68.215.18';
+        return browser.url(pageUrl);
     }
-
-    /**
-    * Switch to iframe
-    * @param {String} name 
-    */
-    selectIFrame(name) {
-    
-       browser.pause(100000);
-       $(`//div/following::iframe[@id= "${name}"]`).waitForExist({ timeout: 10000 });
-       expect($(`//div/following::iframe[@id= "${name}"]`)).toExist();
-       let iframe = browser.$(`//div/following::iframe[@id= "${name}"]`);
-        browser.pause(5000);
-        browser.switchToFrame(iframe);
-        browser.setTimeout({ 'implicit': 10000 })
-      }
     
     //Scroll down
     scrollToBottom() {

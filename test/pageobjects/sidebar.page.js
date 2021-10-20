@@ -10,7 +10,7 @@ class SideBarPage extends Page {
      /**
      * define selectors with XPath using getter methods
      */
-    get repPictures () { return $('//div[@id= "rep-pictures"]')} 
+    get repPictures () { return $('//img[@alt= "Testy Rep0 Tester Rep0"]')} 
     get peronalShopperOption () { return $('//a[@id= "landing-finder-link"]')}
     get selectStore () { return $('//select[@id= "store"]')}
     get customerNameField () { return $('//input[@id= "name"]')}
@@ -23,31 +23,33 @@ class SideBarPage extends Page {
     /**
     * Open sidebar widget url
     * 
-    * @param {String} path 
+    * @param {String} website 
     */
-    async open(path) {
-     await super.open(path);
+    async open(website) {
+     await super.open(website);
     }  
 
     //Click sidebar to open landing page
     async openLandingPage(){
         //switch to iframe of sidebar
-        this.selectIFrame('sf-widget-companion');
-        browser.pause(1000);
+        await browser.pause(3000);
+        const idframe = await $('//iframe[@id="sf-widget-companion"]');
+        await browser.switchToFrame(idframe); 
         
         //Check element on iframe is visble and click it to open landing page
-        await this.repPictures.isVisible();
-        await this.repPictures.click();  
+        await browser.pause(1000);
+        await $('//h1[text()= "Ask an Associate"]').click();  
     }  
 
-    //Select Personal Shopper service for,
+    //Select Personal Shopper service form
     async openPersonalShopperServiceForm(){
+         //Switch to iframe of personal shopper service form
+         await browser.pause(3000);
+         const frame = await $('//iframe[@id="sf-services-landing"]');
+         await browser.switchToFrame(frame);
+    
         //Open personal shopper service form
-        await this.peronalShopperOption.isVisible();
-        await this.peronalShopperOption.isClickable();
-        await this.personalShopperOption.click();
-        //Switch to iframe of personal shopper service form
-        this.selectIFrame('sf-services-landing');
+         await this.peronalShopperOption.click();
     }
 
     /**
@@ -60,8 +62,6 @@ class SideBarPage extends Page {
     */
     async fillOptionalfieldsForPersonalShopper(customerName, budget, phoneNumber, message){
         //Select store from list. "Toronto" is the 2nd element and index is 1.
-        await this.selectStore.waitForVisible();
-        await this.selectStore.isClickable();
         await this.selectStore.click();
         await this.selectStore.selectByIndex(1);
 
@@ -88,8 +88,6 @@ class SideBarPage extends Page {
     * @param {String} customerEmail
     */
     async fillRequiredfieldsForPersonalShopper(customerEmail){
-        await this.customerEmailField.isVisible();
-        await this.customerEmailField.isClickable();
         await this.customerEmailField.click();
         await this.customerEmailField.setValue(customerEmail);
     }
@@ -97,30 +95,28 @@ class SideBarPage extends Page {
     //Customer submits request
     async submitRequest()
     {
-        await this.enabledSendRequestBtn.waitForVisible();
-        await this.enabledSendRequestBtn.isClickable();
         await this.enabledSendRequestBtn.click();
     }
 
-    /**
-    * Verify send request button is visible
+     /**
+    * Get disabled send request button
     * 
-    * @return {boolean} send request button is visiable
-    */ 
-    isSendRequestButtonEnabled()
-     {
-         return this.enabledSendRequestBtn.isVisible();
-     }
- 
-    /**
-    * Verify 'THANK YOU FOR YOUR REQUEST' is shown after request submission
-    * 
-    * @return {boolean} send request confirmation is visible
+    * @return element disabledSendRequestBtn
     */
-    isRequestSent()
-     {
-         return $('.message.global-services__validation').waitForExist(5000).isVisible();
-     }
+   async getDisabledSendButton()
+   {
+       return this.disabledSendRequestBtn;
+   }
+
+   /**
+   * Verify 'THANK YOU FOR YOUR REQUEST' is shown after request submission
+   * 
+   * @return element send request confirmation 
+   */
+   getRequestConfirmation()
+   {
+       return $('.message.global-services__validation').waitForExist(5000);
+   }
         
 }
 export default new SideBarPage();

@@ -19,7 +19,7 @@ class StoreFrontPage extends Page {
     get setDateField () { return $('//input[@name= "choosenDatePlaceholder"]')}
     get calendarTable () { return $('//table[@class= "ui-datepicker-calendar"]')}
     get nextMonthBtn () { return $('//span[text()= "Next"]')}
-    get setTimeField () { return $('//select[@id= "choosenTime"]')}
+    get setTimeField () { return $('//label[@for= "phoneService"]')}
     get customerNameField () { return $('//input[@id= "name"]')}
     get customerEmailField () { return $('//input[@id= "email"]')}
     get subscriptionCheckbox () { return $('//input[@id= "autoSubscribe"]')}
@@ -27,15 +27,17 @@ class StoreFrontPage extends Page {
     get customerMessage () { return $('//textarea[@id= "extraInfo"]')}
     get questionField () { return $('//textarea[@id= "questionField"]')}
     get enabledSendRequestBtn () { return $('//button[text()= "Send Request"]')}
-    get closeBtn () { return $('//button[@Class= "reveal__close-button proper-icon-close"]')}
+    get disabledSendRequestBtn () { return $('//button[@type= "submit" and @disabled]')}
+    get closeBtn () { return $('//div[@style= "display: block;"]/following::div/following::button[@type= "button" and @class= "reveal__close-button proper-icon-close"]')}
+    
     
     /**
     * Open StoreFrontPage url
     * 
-    * @param {String} path 
+    * @param {String} website 
     */
-    async open(path) {
-        await super.open(path);
+    async open(website) {
+        await super.open(website);
     }
 
     /**
@@ -45,8 +47,6 @@ class StoreFrontPage extends Page {
     */
     async getLiveChatTitle() {
         return this.textLiveChat.getText();
-        
-       // await this.statusTextColor.getCSSProperty('color');
     }
 
     /**
@@ -74,15 +74,20 @@ class StoreFrontPage extends Page {
        //Click appointment service form
        this.addAppointmentLink.click();
        //Switch to iframe of appointment
-       this.selectIFrame('bookAnAppointment');
+       await browser.pause(3000);
+       const idframe = await $('//iframe[@id="bookAnAppointment"]');
+       await browser.switchToFrame(idframe);  
     }
 
     //Open Email me service form
     async openEmailMeForm() {
        //Click email me service form 
        this.addQuestionLink.click();
+       
        //Switch to iframe of email me
-       this.selectIFrame('ContactMe');
+       await browser.pause(3000);
+       const idframe = await $('//iframe[@id="ContactMe"]');
+       await browser.switchToFrame(idframe);  
     }
 
     /**
@@ -93,25 +98,18 @@ class StoreFrontPage extends Page {
     */
     async fillOptionalFieldForAppointment(customerName, message) {
         //Selet Phone as appointment type
-        browser.pause(1000);
-        await this.phoneTypeAppointment.isExisting();
-        await this.phoneTypeAppointment.isClickable();
-        await this.phoneTypeAppointment.click()
-
-        //Set appointment time
-        await this.setTimeField.isClickable();
-        await this.setTimeField.click();
-        await this.setTimeField.selectByIndex(2);
-
+        browser.setTimeout({ 'implicit': 5000 });
+       
         //Enter customer's name
-        await this.customerNameField.isVisible();
-        await this.customerNameField.click();
-        await this.customerNameField.setValue(customerName);   
-        
+       await this.customerNameField.click();
+       await this.customerNameField.setValue(customerName);  
+
         //Enter message to rep
-        await this.customerMessage.isVisible();
         await this.customerMessage.click();
         await this.customerMessage.setValue(message);
+
+        //Select phone type appointment. 
+        await $('//label[@for= "phoneService"]').click();
     }
 
     /**
@@ -124,47 +122,50 @@ class StoreFrontPage extends Page {
     */
     async fillRequiredFieldForAppointment(isDateFieldClicked, customerEmail, phoneNumber)
     {
-        //if customer clicks set date field, will continue to set date
-        if (isDateFieldClicked){
-           //Set appointment date
-           await this.setDateField.isVisible();
-           await this.setDateField.isClickable();
-           await this.setDateField.click();
-
-            browser.pause(500);
-            await this.calendarTable.isVisible();
-        
-            //Calculate appointment date in 7 days
-            //If date is greater than last date of current month, it automatically converts to the date in next month
-            var date = new Date();
-            var currentMonth = date.getMonth();
-            var appointmentDate = date.setDate(date.getDate() + 7);
-            var appointmentMonth = appointmentDate.getMonth();
-            var numOfDate = appointmentDate.getDate();
-            
-            //If appointment is in next month, click next month button to move to next month calendar
-            //Select appointment date
-            if (appointmentMonth > currentMonth){
-                await this.nextMonthBtn.isVisible();
-                await this.nextMonthBtn.click();
-                browser.pause(500);
-                await this.calendarTable.isVisible();
-                await $(`//a[@class= "ui-state-default" and text()= "${numOfDate}"]`).click();
-            } else if (appointmentMonth == currentMonth){
-                //Select appointment date in currently month
-                await $(`//a[@class= "ui-state-default" and text()= "${numOfDate}"]`).click();
-            }
-        }
-        
+        browser.pause(500);
         //Enter customer's email address
-        await this.customerEmailField.isVisible();
         await this.customerEmailField.click();
         await this.customerEmailField.setValue(customerEmail);
 
         //Enter customer's phone number
-        await this.customerPhoneField.isVisible();
-        await this.customerEmailField.click();
-        await this.customerEmailField.setValue(phoneNumber);
+        await this.customerPhoneField.click();
+        await this.customerPhoneField.setValue(phoneNumber);
+        
+        //if customer clicks set date field, will continue to set date
+          if (isDateFieldClicked == true){
+           //Set appointment date
+           await this.setDateField.isClickable();
+           await this.setDateField.click();
+
+            browser.pause(500);
+            //await this.calendarTable.isVisible();
+        
+            //Calculate dynamic appointment date in 7 days
+            //If date is greater than last date of current month, it automatically converts to the date in next month
+            const numOfDaysForAppointment = 7;
+            var date = new Date();
+            var currentMonth= date.getMonth();
+            var appointmentDate = new Date(new Date().setDate(new Date().getDate() + numOfDaysForAppointment));
+            var numOfDate = appointmentDate.getDate();
+            var numOfMonth = appointmentDate.getMonth();
+
+            const dateOnCalendar = await $(`//a[@class= "ui-state-default" and text()= "${numOfDate}"]`);
+            
+            //If appointment is in next month, click next month button to move to next month calendar
+            //Select appointment date
+            if (numOfMonth > currentMonth){
+                await this.nextMonthBtn.click();
+                browser.pause(500);
+                await dateOnCalendar.click();
+            } 
+                //Select appointment date in currently month
+                await dateOnCalendar.click();
+          
+                //Set appointment time
+                //await this.setTimeField.click();
+                await $('//select[@id= "choosenTime"]').selectByIndex(1);
+        }
+        
     }
 
     /**
@@ -177,14 +178,12 @@ class StoreFrontPage extends Page {
     {
 
         //Enter customer's name
-        await this.customerNameField.isVisible();
         await this.customerNameField.click();
         await this.customerNameField.setValue(customerName); 
 
         //If customer wants to subscribe, then click checkbox
-        if (isSubscribed)
+        if (isSubscribed == true)
         {
-            await this.subscriptionCheckbox.isClickable();
             await this.subscriptionCheckbox.click();
         }
     }
@@ -198,13 +197,10 @@ class StoreFrontPage extends Page {
     async fillRequiredFieldForEmailMe(customerEmail, question) 
     {
         //Enter customer's email address
-        await this.customerEmailField.isVisible();
         await this.customerEmailField.click();
         await this.customerEmailField.setValue(customerEmail);
 
         //Enter customer's question
-        await this.questionField.isVisible();
-        await this.questionField.isClickable();
         await this.questionField.setValue(question);
     }
 
@@ -213,49 +209,45 @@ class StoreFrontPage extends Page {
     {
         this.scrollToBottom();
         browser.pause(500);
-        await this.enabledSendRequestBtn.waitForVisible();
-        await this.enabledSendRequestBtn.isClickable();
         await this.enabledSendRequestBtn.click();
     }
 
     //Customer closes service form
-    closeServiceForm()
+    async closeServiceForm()
     {
+        await browser.pause(3000);
         this.closeBtn.scrollIntoView();
-        browser.pause(500);
-        this.closeBtn.waitForVisible();
-        this.closeBtn.isClickable();
-        this.closeBth.click();
+        await this.closeBtn.click();
     }
 
     /**
-    * Verify send request button is visible
+    * Get disabled send request button
     * 
-    * @return {boolean} send request button is visiable
+    * @return element disabledSendRequestBtn
     */
-    isSendRequestButtonEnabled()
+   async getDisabledSendButton()
     {
-        return this.enabledSendRequestBtn.isVisible();
+        return this.disabledSendRequestBtn;
     }
 
     /**
     * Verify 'THANK YOU FOR YOUR REQUEST' is shown after request submission
     * 
-    * @return {boolean} send request confirmation is visible
+    * @return element send request confirmation 
     */
-    isRequestSent()
+    getRequestConfirmation()
     {
-        return $('.message.global-services__validation').waitForExist(5000).isVisible();
+        return $('.message.global-services__validation').waitForExist(5000);
     }
 
      /**
     * Verify service form is open
     * 
-    * @return {boolean} both name field and email field are visible
+    * @return element field in service form
     */
-    isServiceFormOpen()
+    getFieldFromServiceForm()
     {
-        return this.customerNameField.isVisible() && this.customerEmailField.isVisible();
+        return this.customerNameField;
     }
 }
 
